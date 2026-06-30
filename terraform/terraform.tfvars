@@ -1,2 +1,2 @@
-region 		= "us-east-1"
-project_name 	= "aws-iac-project"
+region       = "us-east-1"
+cluster_name = "eks-lab"
