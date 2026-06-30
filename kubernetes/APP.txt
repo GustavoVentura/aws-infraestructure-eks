@@ -1,0 +1,18 @@
+# Testar classic load balancer
+
+# subir o deployment
+kubectl apply -f deployment.yaml
+
+# subir o service type loadbalancer
+kubectl apply -f service.yaml
+
+
+# Testar loadbalancer + ingress com aws-loadbalancer-controller
+# subir o deployment
+kubectl apply -f deployment.yaml
+
+# subir o service type ClusterIP
+kubectl apply -f service_awslbcontroller.yaml
+
+# subir o ingress
+kubectl apply -f ingress_awslbcontroller.yaml
